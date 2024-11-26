@@ -1,0 +1,14 @@
+<form action="{% url 'accounts:signin_view' %}" method="post">
+    {%csrf_token%}
+    <fieldset>
+    <legend><h1>signin</h1></legend>
+        <b>username:</b><input type="text" name="username" style="margin-left: 55px;"><br>
+        <b>password:</b><input type="password" name="password" style="margin-left: 57px ;"><br>
+        <b>confirm password:</b><input type="password" name="confirm_password"><br>
+        {% if password_incorrect %}
+            <h6 style="color: red;">{{password_incorrect}}</h6>
+        {% endif %}
+        <b>email:</b><input type="text" name="email" style="margin-left: 85px;">    
+    </fieldset>
+    <input type="submit">
+</form>

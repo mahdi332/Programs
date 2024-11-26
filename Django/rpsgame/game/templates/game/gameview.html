@@ -1,0 +1,14 @@
+<form action="{%url 'game:results'%}" method="post">
+    {%csrf_token%}
+    <fieldset>
+        <legend>
+            <h1>ROCK PAPER SCISSORS?
+            </h1>
+        </legend>
+        {% for choice in GA%}
+            <input type="radio" name="choice" id="{choice{forloop.counter}}" value="{{choice.id}}">{{choice.choice_text}}
+            <label for="{choice{forloop.counter}}"></label><br>
+        {% endfor %}
+    </fieldset>
+    <input type="submit" value="Vote">
+</form>

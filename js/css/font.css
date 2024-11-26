@@ -1,0 +1,40 @@
+@font-face {
+    font-family: IRANSans;
+    src: url('../font/IRANSansX-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: IRANSans;
+    src: url('../font/IRANSansX-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: bold;
+}
+@font-face {
+    font-display: swap;
+    font-family: Morabba;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/Morabba-UltraLight.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: Morabba;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/Morabba-Heavy.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: Morabba;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/Morabba-Bold.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: Morabba;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Morabba-Regular.woff') format('woff');
+}

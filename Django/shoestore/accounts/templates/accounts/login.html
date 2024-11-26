@@ -1,0 +1,13 @@
+<form action="{% url 'accounts:login_view' %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h1>verify</h1></legend>
+        <b>username:</b><input type="text" name="username"><br><br>
+        <b>password:</b><input type="password" name="password">
+        {% if login_failed %}
+            <p style="color: red;">{{login_failed}}</p>
+        {% endif %}
+    </fieldset>
+    <input type="submit">
+</form>
+<a href="{% url 'accounts:signin_section' %}">sign in?</a>

@@ -1,0 +1,144 @@
+@import "font.css";
+
+/* ------------- Variables -------------*/
+:root {
+    --primary-color: #4F1F0F;
+    --secondary-color: #CCB08A;
+    --font-color: #070100;
+    --text-font-family: IRANSans;
+    --title-font-family: Morabba;
+    --font-size: 16px;
+    --title-size: 24px;
+}
+
+/* ------------- Template Style -------------*/
+body {
+    font-size: var(--font-size);
+    font-family: var(--text-font-family);
+    color: var(--font-color);
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+/* ------------- Your Style -------------*/
+.navbar{
+    height: 4.5rem !important;
+}
+.header {
+    background: linear-gradient(270deg, #CCB08A 30%, transparent 100%), url(../image/banner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Morabba;
+    color: #4F1F0F;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #4F1F0F !important;
+    font-family: Morabba;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    border-bottom: 2px solid #4F1F0F;
+}
+
+.order {
+    border: 1px solid #4F1F0F !important;
+}
+
+.order:hover{
+    color: white !important;
+    border: 1px solid #CCB08A !important;
+    background-color: #CCB08A !important;
+}
+
+.order2{
+    text-decoration: none;
+    border: 1px solid #4F1F0F !important;
+    background-color: #4F1F0F;
+    color: white !important;
+}
+
+.order2:hover{
+ background-color: black;
+}
+
+.about-title{
+ border-bottom: 3px solid #CCB08A;
+}
+
+.menu-title{
+    border-bottom: 3px solid #CCB08A;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.medium-img,
+.small-img {
+    height: 100%;
+}
+
+.image-holder {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #ccb08ac4;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.image-holder:hover .image-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.image-overlay h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Morabba;
+    font-size: 2em !important;
+    color: #4F1F0F;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background-color: #4F1F0F;
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+        background: linear-gradient(#ccb08ace, #ccb08ace), url(../image/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image-overlay h4{
+        font-size: 1.5em !important;
+        padding: 0px;
+    }
+}
